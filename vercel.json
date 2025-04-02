@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/saveEmail",
+      "destination": "/api/saveEmail.js"
+    }
+  ]
+}
