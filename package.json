@@ -1,43 +1,17 @@
 {
   "name": "email-api",
   "version": "1.0.0",
-  "description": "API endpoint for email collection with MongoDB and Telegram integration",
-  "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "NODE_ENV=development node --watch api/saveemail.js",
-    "start": "NODE_ENV=production node api/saveemail.js",
-    "build": "echo 'Build not required for serverless functions'",
-    "lint": "eslint .",
-    "test": "vitest"
+    "start": "NODE_ENV=production node api/saveemail.js"
   },
-  "keywords": [
-    "mongodb",
-    "api",
-    "email-collection",
-    "telegram-bot"
-  ],
-  "author": "Your Name <your.email@example.com>",
-  "license": "MIT",
   "dependencies": {
     "mongodb": "^5.6.0",
     "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express-rate-limit": "^6.8.0",
-    "http-errors": "^2.0.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.55.0",
-    "eslint-config-prettier": "^9.1.0",
-    "vitest": "^1.1.0"
+    "express-rate-limit": "^6.8.0"
   },
   "engines": {
-    "node": ">=18.x",
-    "npm": ">=9.x"
-  },
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/your-username/email-api.git"
+    "node": ">=18.x"
   }
 }
